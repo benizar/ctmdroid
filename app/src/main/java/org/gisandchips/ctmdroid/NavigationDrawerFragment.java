@@ -102,9 +102,12 @@ public class NavigationDrawerFragment extends Fragment {
                 android.R.layout.simple_list_item_activated_1,
                 android.R.id.text1,
                 new String[]{
-                        getString(R.string.title_section1),
-                        getString(R.string.title_section2),
-                        getString(R.string.title_section3),
+                        getString(R.string.title_all),
+                        getString(R.string.title_management),
+                        getString(R.string.title_unclassified),
+                        getString(R.string.title_classified),
+                        getString(R.string.title_invalid),
+                        getString(R.string.title_unknown),
                 }));
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
         return mDrawerListView;
@@ -247,8 +250,24 @@ public class NavigationDrawerFragment extends Fragment {
             return true;
         }
 
-        if (item.getItemId() == R.id.action_example) {
-            Toast.makeText(getActivity(), "Example action.", Toast.LENGTH_SHORT).show();
+        if (item.getItemId() == R.id.action_create_project) {
+            Toast.makeText(getActivity(), R.string.action_create_project, Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        else if (item.getItemId() == R.id.action_open_project) {
+            Toast.makeText(getActivity(), R.string.action_open_project, Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        else if (item.getItemId() == R.id.action_save_project) {
+            Toast.makeText(getActivity(), R.string.action_save_project, Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        else if (item.getItemId() == R.id.action_close_project) {
+            Toast.makeText(getActivity(), R.string.action_close_project, Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        else if (item.getItemId() == R.id.action_settings) {
+            Toast.makeText(getActivity(), R.string.action_settings, Toast.LENGTH_SHORT).show();
             return true;
         }
 

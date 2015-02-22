@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">ctmdroid</string>
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
+    <string name="app_name">CTMdroid</string>
+    <string name="title_all">All pics</string>
+    <string name="title_management">Management pics</string>
+    <string name="title_unclassified">Unclassified</string>
+    <string name="title_classified">Classified</string>
+    <string name="title_unknown">Unknown</string>
+    <string name="title_invalid">Invalid</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="action_example">Example action</string>
+    <string name="action_create_project">Create new project</string>
+    <string name="action_open_project">Open project</string>
+    <string name="action_save_project">Save project</string>
+    <string name="action_close_project">Close project</string>
     <string name="action_settings">Settings</string>
 
 </resources>
